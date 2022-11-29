@@ -43,6 +43,7 @@ h2 {
   color: var(--title-color);
   text-align: center;
   margin-bottom: 50px;
+  margin-left: -15px;
 }
 
 h4 {
@@ -67,7 +68,7 @@ p {
 .container {
   padding: 0;
   width: 1200px;
-  margin-left: 200px;
+  margin-left: 215px;
 }
 
 .section {
@@ -302,7 +303,7 @@ p {
 .paragraphs ul {
   list-style-type: none;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .paragraphs li:not(:last-child) {
@@ -318,6 +319,7 @@ p {
   line-height: 116%;
   letter-spacing: 0.03em;
   color: var(--title-color);
+  justify-content: flex-start;
 }
 
 .third-section {
@@ -335,7 +337,7 @@ p {
 .employees ul {
   list-style-type: none;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .employees li {
