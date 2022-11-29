@@ -67,7 +67,7 @@ p {
 .container {
   padding: 0;
   width: 1200px;
-  margin-left: 215px;
+  margin-left: 200px;
 }
 
 .section {
@@ -303,9 +303,10 @@ p {
 .paragraphs ul {
   list-style-type: none;
   display: flex;
+  justify-content: center;
 }
 
-.paragraphs li {
+.paragraphs li:not(:last-child) {
   margin-right: 30px;
 }
 
