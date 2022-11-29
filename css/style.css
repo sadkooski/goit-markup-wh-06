@@ -23,14 +23,55 @@ body {
   width: 1600px;
 }
 
+h1 {
+  margin-left: 237px;
+  width: 696px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 136%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--background-white);
+  text-align: center;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 116%;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 114%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-color);
+}
+
+p {
+  margin-top: 10px;
+  width: 270px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+
 .container {
   padding: 0;
   width: 1200px;
   margin-left: 215px;
-  display: flex;
 }
 
 .section {
+  display: block;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -43,6 +84,7 @@ body {
 
 .header-elements {
   justify-content: space-between;
+  display: flex;
 }
 
 .header-elements nav,
@@ -172,7 +214,6 @@ body {
 
 .buttons button {
   padding: 6px 22px;
-
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
@@ -199,6 +240,7 @@ body {
   background: var(--background-white);
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 }
 
@@ -234,15 +276,13 @@ body {
 
 .main-section {
   background: var(--background-dark-grey);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
-.main-section h1 {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 136%;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--background-white);
+.main-section div {
+  display: block;
+  text-align: center;
 }
 
 .main-section button {
@@ -256,44 +296,36 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
+  padding: 10px 42px;
+  margin-top: 30px;
 }
 
-.paragraphs {
+.paragraphs ul {
   list-style-type: none;
+  display: flex;
 }
 
-.paragraphs h4 {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 114%;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--title-color);
-}
-
-.paragraphs p {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 171%;
-  letter-spacing: 0.03em;
-  color: var(--text-color);
-}
-
-.titles {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 116%;
-  letter-spacing: 0.03em;
-  color: var(--title-color);
+.paragraphs li {
+  margin-right: 30px;
 }
 
 .work {
+  justify-content: center;
+  display: flex;
   list-style-type: none;
   font-weight: 700;
   font-size: 36px;
   line-height: 116%;
   letter-spacing: 0.03em;
   color: var(--title-color);
+}
+
+.third-section {
+  margin-top: -94px;
+}
+
+.work li:not(:last-child) {
+  margin-right: 30px;
 }
 
 .employees {
@@ -302,6 +334,21 @@ body {
 
 .employees ul {
   list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.employees li {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--background-white);
+}
+
+.employees li:not(:last-child) {
+  margin-right: 30px;
 }
 
 .employees-names {
@@ -311,6 +358,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
+  margin-bottom: 10px;
 }
 
 .employees-jobs {
@@ -320,4 +368,8 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
+}
+
+.employees-text {
+  padding: 30px;
 }

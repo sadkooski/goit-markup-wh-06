@@ -50,12 +50,14 @@
 
     <main>
       <section class="main-section">
-        <h1 id="agencja">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-        <button class="buttons" type="button">Zamów usługę</button>
+        <div class="container">
+          <h1 id="agencja">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+          <button type="button">Zamów usługę</button>
+        </div>
       </section>
 
-      <section>
-        <ul class="paragraphs">
+      <section class="paragraphs section container">
+        <ul>
           <li>
             <h4>LOREM IPSUM</h4>
             <p>
@@ -87,7 +89,7 @@
         </ul>
       </section>
 
-      <section>
+      <section class="third-section container section">
         <h2 class="titles" id="portfolio">Czym się zajmujemy</h2>
 
         <ul class="work">
@@ -118,52 +120,64 @@
         </ul>
       </section>
 
-      <section class="employees">
-        <h2 class="titles">Nasz zespół</h2>
+      <section class="employees section">
+        <div class="container">
+          <h2 class="titles">Nasz zespół</h2>
 
-        <ul>
-          <li>
-            <img
-              src="images/product-designer.jpg"
-              alt="John Doe"
-              width="270"
-              height="260"
-            />
-            <span class="employees-names">John Doe</span>
-            <span class="employees-jobs">Product Designer</span>
-          </li>
+          <ul>
+            <li>
+              <img
+                src="images/product-designer.jpg"
+                alt="John Doe"
+                width="270"
+                height="260"
+              />
+              <figure class="employees-text">
+                <figcaption class="employees-names">John Doe</figcaption>
+                <figcaption class="employees-jobs">Product Designer</figcaption>
+              </figure>
+            </li>
 
-          <li>
-            <img
-              src="images/frontend-developer.jpg"
-              alt="John Doe"
-              width="270"
-              height="260"
-            />
-            <span class="employees-names">John Doe</span>
-            <span class="employees-jobs">Frontend Developer</span>
-          </li>
-          <li>
-            <img
-              src="images/marketing.jpg"
-              alt="John Doe"
-              width="270"
-              height="260"
-            />
-            <span class="employees-names">John Doe</span>
-            <span class="employees-jobs">Marketing</span>
-          </li>
-          <li>
-            <img
-              src="images/ui-designer.jpg"
-              alt="John Doe"
-              width="270"
-              height="260"
-            />
-            <span class="employees-names">John Doe</span>
-            <span class="employees-jobs">UI Designer</span>
-          </li>
-        </ul>
+            <li>
+              <img
+                src="images/frontend-developer.jpg"
+                alt="John Doe"
+                width="270"
+                height="260"
+              />
+              <figure class="employees-text">
+                <figcaption class="employees-names">John Doe</figcaption>
+                <figcaption class="employees-jobs">
+                  Frontend Developer
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <img
+                src="images/marketing.jpg"
+                alt="John Doe"
+                width="270"
+                height="260"
+              />
+              <figure class="employees-text">
+                <figcaption class="employees-names">John Doe</figcaption>
+                <figcaption class="employees-jobs">Marketing</figcaption>
+              </figure>
+            </li>
+            <li>
+              <img
+                src="images/ui-designer.jpg"
+                alt="John Doe"
+                width="270"
+                height="260"
+              />
+              <figure class="employees-text">
+                <figcaption class="employees-names">John Doe</figcaption>
+                <figcaption class="employees-jobs">UI Designer</figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
