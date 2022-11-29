@@ -108,7 +108,7 @@ body {
 }
 
 .footer-elements .logo {
-  margin-bottom: 20px;
+  margin: 0px;
 }
 
 .logo {
@@ -183,17 +183,18 @@ body {
 }
 
 .contacts-footer {
-  margin-top: 20px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--contacts-footer);
+  margin-top: 20px;
 }
 
 .contacts-footer li {
   list-style-type: none;
+  height: 21px;
 }
 
 .contacts-footer li:not(:last-child) {
