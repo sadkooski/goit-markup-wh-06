@@ -199,6 +199,7 @@ body {
   background: var(--background-white);
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
 .projects li {
