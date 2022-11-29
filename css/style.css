@@ -23,22 +23,22 @@ body {
   width: 1600px;
 }
 
-h1 {
+.container h1 {
   margin-left: 252px;
   width: 696px;
   font-weight: 900;
   font-size: 44px;
-  line-height: 136%;
+  line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--background-white);
   text-align: center;
 }
 
-h2 {
+.titles {
   font-weight: 700;
   font-size: 36px;
-  line-height: 116%;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--title-color);
   text-align: center;
@@ -46,29 +46,29 @@ h2 {
   margin-left: -15px;
 }
 
-h4 {
+.paragraphs h4 {
   font-weight: 700;
   font-size: 14px;
-  line-height: 114%;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-color);
 }
 
-p {
+.paragraphs {
   margin-top: 10px;
   width: 270px;
   font-weight: 400;
   font-size: 14px;
-  line-height: 171%;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
 
 .container {
-  padding: 0;
   width: 1200px;
-  margin-left: 215px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .section {
@@ -107,12 +107,16 @@ p {
   padding-bottom: 60px;
 }
 
+.footer-elements .logo {
+  margin-bottom: 20px;
+}
+
 .logo {
   font-family: "Raleway";
   text-decoration: none;
   font-weight: 700;
   font-size: 26px;
-  line-height: 119%;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--active-color);
   box-sizing: border-box;
@@ -131,7 +135,7 @@ p {
 .navigation > li > a {
   font-weight: 500;
   font-size: 14px;
-  line-height: 114%;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-color);
 }
@@ -161,7 +165,7 @@ p {
   list-style-type: none;
   font-weight: 500;
   font-size: 14px;
-  line-height: 114%;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color);
   padding: 0px;
@@ -183,7 +187,7 @@ p {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 171%;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--contacts-footer);
 }
@@ -218,7 +222,7 @@ p {
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
-  line-height: 162%;
+  line-height: 1.62;
   letter-spacing: 0.03em;
   color: var(--title-color);
   border-radius: 4px;
@@ -253,7 +257,7 @@ p {
 .projects-names {
   font-weight: 700;
   font-size: 18px;
-  line-height: 200%;
+  line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-color);
 }
@@ -261,7 +265,7 @@ p {
 .projects-categories {
   font-weight: 400;
   font-size: 16px;
-  line-height: 188%;
+  line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
@@ -288,7 +292,7 @@ p {
 .main-section button {
   font-weight: 700;
   font-size: 16px;
-  line-height: 188%;
+  line-height: 1.88;
   letter-spacing: 0.06em;
   cursor: pointer;
   color: var(--background-white);
@@ -316,7 +320,7 @@ p {
   list-style-type: none;
   font-weight: 700;
   font-size: 36px;
-  line-height: 116%;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--title-color);
   justify-content: flex-start;
@@ -356,7 +360,7 @@ p {
 .employees-names {
   font-weight: 500;
   font-size: 16px;
-  line-height: 118%;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
@@ -366,7 +370,7 @@ p {
 .employees-jobs {
   font-weight: 400;
   font-size: 16px;
-  line-height: 118%;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
