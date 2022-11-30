@@ -54,7 +54,7 @@ body {
   color: var(--title-color);
 }
 
-.paragraphs {
+.paragraphs p {
   margin-top: 10px;
   width: 270px;
   font-weight: 400;
