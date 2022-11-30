@@ -20,7 +20,6 @@ body {
   background: #ffffff;
   font-family: "Roboto", sans-serif;
   color: #212121;
-  width: 1600px;
 }
 
 .container h1 {
@@ -194,6 +193,7 @@ body {
 
 .contacts-footer li {
   list-style-type: none;
+  line-height: 1.5;
 }
 
 .contacts-footer li:not(:last-child) {
