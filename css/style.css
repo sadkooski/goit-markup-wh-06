@@ -226,9 +226,8 @@ body {
   box-sizing: border-box;
   fill: #757575;
   margin-right: 10px;
+  background-color: cadetblue;
 }
-
-
 
 .contacts-footer {
   font-style: normal;
