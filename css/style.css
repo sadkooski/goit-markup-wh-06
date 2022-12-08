@@ -8,6 +8,7 @@
   --contacts-footer: rgba(255, 255, 255, 0.6);
   --background-image: rgba(47, 48, 58, 0.4);
   --icons-inactive: #afb1b8;
+  --icons-inactive-footer: rgba(255, 255, 255, 0.1);
 }
 
 *,
@@ -85,7 +86,7 @@ body {
   fill: currentColor;
 }
 
-.icons-contener {
+.icons-container {
   padding: 25px 102.34px;
   margin-bottom: 30px;
   width: 270px;
@@ -96,27 +97,33 @@ body {
 .team-media-icons {
   fill: var(--icons-inactive);
 }
-.team-media li:hover {
-  background: #2196f3;
+
+.team-media-icons:hover {
+  fill: var(--active-color);
 }
 
-.team-media {
+.footer-media-icons {
+  fill: var(--icons-inactive-footer);
+}
+
+.footer-media-icons:hover {
+  fill: var(--active-color);
+}
+
+.team-icons {
   list-style: none;
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
+  gap: 10px;
 }
 
-.team-media li {
+.team-icons li {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  padding: 12px;
 }
 
-.team-media li:not(:last-child) {
-  margin-right: 10px;
-}
 /* HEADER and FOOTER*/
 
 .header {
@@ -138,7 +145,13 @@ body {
 }
 
 .footer {
+  display: flex;
   background: var(--background-dark-grey);
+  background-color: var(--background-dark-grey);
+}
+
+.footer > section {
+  display: flex;
 }
 
 .footer-elements {
@@ -149,6 +162,31 @@ body {
 
 .footer-elements .logo {
   margin: 0px;
+}
+
+.footer-icons {
+  box-sizing: border-box;
+  display: block;
+  margin-top: 72px;
+  margin-left: 70px;
+}
+
+.footer-icons > ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.footer-icons > span {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--background-white);
+  margin-bottom: 20px;
 }
 
 .logo {
@@ -189,14 +227,15 @@ body {
   margin-left: 93px;
   margin-top: 32px;
 }
-
 .contacts-header a:hover,
 .contacts-header a:focus,
-.contacts-footer a:hover,
-.contacts-footer a:focus,
 .navigation a:hover,
 .navigation a:focus {
   color: var(--active-color);
+}
+
+.contacts-header a:hover .contacts-icon:hover {
+  fill: var(--active-color);
 }
 
 .contacts-header {
@@ -223,10 +262,8 @@ body {
 }
 
 .contacts-icon {
-  box-sizing: border-box;
   fill: #757575;
   margin-right: 10px;
-  background-color: cadetblue;
 }
 
 .contacts-footer {
@@ -436,4 +473,20 @@ body {
 .employees-text {
   padding: 30px;
   padding-bottom: 16px;
+}
+
+.client-icons {
+  justify-content: center;
+  align-items: center;
+  fill: var(--icons-inactive);
+}
+
+.client-icons-container {
+  display: flex;
+
+  width: 170px;
+  height: 92px;
+  border: var(--icons-inactive) solid 1px;
+  border-radius: 4px;
+  justify-content: center;
 }
