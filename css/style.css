@@ -245,6 +245,8 @@ body {
 }
 .contacts-header a:hover,
 .contacts-header a:focus,
+.contacts-footer a:hover,
+.contacts-footer a:focus,
 .navigation a:hover,
 .navigation a:focus {
   color: var(--active-color);
@@ -276,6 +278,10 @@ body {
 .navigation a {
   text-decoration: none;
   color: var(--text-color);
+}
+
+.contacts-header a {
+  fill: currentColor;
 }
 
 .contacts-icon {
@@ -321,8 +327,8 @@ body {
 
 .buttons button:hover,
 .buttons button:focus {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .buttons button {
@@ -364,8 +370,8 @@ body {
 
 .projects li:hover,
 .projects li:focus {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .projects-names {
@@ -389,6 +395,10 @@ body {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
+}
+
+.img-text > figcaption > span {
+  display: block;
 }
 
 /* MAIN INDEX */
