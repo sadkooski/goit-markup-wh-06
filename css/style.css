@@ -126,7 +126,8 @@ body {
 .team-icons > li:focus {
   background-color: var(--active-color);
 }
-.team-icons > li:hover > .team-media-icons {
+.team-icons > li:hover > .team-media-icons,
+.team-icons > li:focus > .team-media-icons {
   fill: var(--background-white);
 }
 
@@ -517,7 +518,6 @@ body {
 .client-icons {
   justify-content: center;
   align-items: center;
-  fill: var(--icons-inactive);
 }
 
 .client-icons-container {
@@ -525,6 +525,7 @@ body {
   width: 170px;
   height: 92px;
   border: var(--icons-inactive) solid 1px;
+  fill: var(--icons-inactive);
   border-radius: 4px;
   justify-content: center;
   align-items: center;
@@ -533,9 +534,12 @@ body {
 .client-icons-container:hover,
 .client-icons-container:focus {
   border-color: var(--active-color);
+  fill: var(--active-color);
 }
+
 .client-icons-container:hover > .client-icons,
 .client-icons-container:focus > .client-icons {
+  border-color: var(--active-color);
   fill: var(--active-color);
 }
 
