@@ -18,11 +18,6 @@
   margin: 0;
   padding: 0;
 }
-/*
-animation-name: animatecardy294;
-animation-duration: 250ms;
-animation-fill-mode: forwards;
-*/
 
 :hover,
 :focus {
@@ -307,7 +302,6 @@ body {
   text-decoration: none;
   color: var(--text-color);
 }
-
 .contacts-header a {
   fill: currentColor;
 }
