@@ -92,6 +92,9 @@ body {
   fill: currentColor;
 }
 
+
+/* ICONS */
+
 .icons-container {
   padding: 25px 102.34px;
   margin-bottom: 30px;
@@ -137,6 +140,12 @@ body {
 .team-icons > li:hover > .team-media-icons,
 .team-icons > li:focus > .team-media-icons {
   fill: var(--background-white);
+}
+
+.contacts-icon {
+  fill: #757575;
+  margin-right: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* HEADER and FOOTER*/
@@ -232,6 +241,9 @@ body {
   color: var(--title-color);
 }
 
+
+/* NAVIGATION & CONTACTS HEADER */
+
 .navigation > li > a {
   font-weight: 500;
   font-size: 14px;
@@ -240,15 +252,12 @@ body {
   color: var(--title-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .navigation li:not(:last-child) {
   margin-right: 46px;
 }
-
 .navigation li {
   position: relative;
 }
-
 .navigation .active::after {
   content: "";
   position: absolute;
@@ -259,12 +268,13 @@ body {
   bottom: 0;
   border-radius: 2px;
 }
-
 .navigation {
   list-style-type: none;
   margin-left: 93px;
   margin-top: 32px;
 }
+
+
 .contacts-header a:hover,
 .contacts-header a:focus,
 .contacts-footer a:hover,
@@ -302,14 +312,9 @@ body {
   text-decoration: none;
   color: var(--text-color);
 }
+
 .contacts-header a {
   fill: currentColor;
-}
-
-.contacts-icon {
-  fill: #757575;
-  margin-right: 10px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-footer {
@@ -344,6 +349,7 @@ body {
 .portfolio {
   display: block;
 }
+
 
 .buttons {
   list-style-type: none;
@@ -382,6 +388,7 @@ body {
   color: var(--background-white);
   background: var(--active-color);
 }
+
 
 .projects {
   margin-top: 56px;
@@ -449,7 +456,6 @@ body {
   letter-spacing: 0.06em;
   color: var(--title-color);
 }
-
 .projects-categories {
   font-weight: 400;
   font-size: 16px;
@@ -465,7 +471,6 @@ body {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
 }
-
 .img-text > figcaption > span {
   display: block;
 }
@@ -516,6 +521,7 @@ body {
   margin-right: 30px;
 }
 
+
 .work {
   justify-content: center;
   display: flex;
@@ -555,19 +561,13 @@ body {
   letter-spacing: 0.03em;
 }
 
-.work-title-text {
-}
-
-.third-section {
-  margin-top: -94px;
-}
-
 .work li:not(:last-child) {
   margin-right: 30px;
 }
 
-.employees {
-  background: var(--background-grey);
+
+.third-section {
+  margin-top: -94px;
 }
 
 .team-img {
@@ -587,6 +587,11 @@ body {
 
 .team-img > li:not(:last-child) {
   margin-right: 30px;
+}
+
+
+.employees {
+  background: var(--background-grey);
 }
 
 .employees-names {
@@ -612,6 +617,7 @@ body {
   padding: 30px;
   padding-bottom: 16px;
 }
+
 
 .client-icons {
   justify-content: center;
@@ -649,6 +655,8 @@ body {
   justify-content: center;
   gap: 30px;
 }
+
+/* BACKDROP & MODAL */
 
 .backdrop {
   position: fixed;
