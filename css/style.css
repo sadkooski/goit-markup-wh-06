@@ -25,6 +25,10 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
 }
 
+svg {
+  vertical-align: middle;
+}
+
 body {
   background: #ffffff;
   font-family: "Roboto", sans-serif;
@@ -92,7 +96,6 @@ body {
   fill: currentColor;
 }
 
-
 /* ICONS */
 
 .icons-container {
@@ -147,7 +150,6 @@ body {
   margin-right: 10px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 /* HEADER and FOOTER*/
 
@@ -242,7 +244,6 @@ body {
   color: var(--title-color);
 }
 
-
 /* NAVIGATION & CONTACTS HEADER */
 
 .navigation > li > a {
@@ -266,15 +267,31 @@ body {
   width: 100%;
   background-color: var(--active-color);
   left: 0;
-  bottom: 0;
+  bottom: -1px;
   border-radius: 2px;
 }
+
+.navigation li:hover > a::after,
+.navigation a:focus::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background-color: var(--active-color);
+  left: 0;
+  bottom: -1px;
+  border-radius: 2px;
+}
+
+.navigation .active a {
+  color: #2196f3;
+}
+
 .navigation {
   list-style-type: none;
   margin-left: 93px;
   margin-top: 32px;
 }
-
 
 .contacts-header a:hover,
 .contacts-header a:focus,
@@ -345,13 +362,11 @@ body {
   color: var(--background-white);
 }
 
-
 /* MAIN PORTFOLIO */
 
 .portfolio {
   display: block;
 }
-
 
 .buttons {
   list-style-type: none;
@@ -390,7 +405,6 @@ body {
   color: var(--background-white);
   background: var(--active-color);
 }
-
 
 .projects {
   margin-top: 56px;
@@ -477,7 +491,6 @@ body {
   display: block;
 }
 
-
 /* MAIN INDEX */
 
 .main-section {
@@ -524,7 +537,6 @@ body {
   margin-right: 30px;
 }
 
-
 .work {
   justify-content: center;
   display: flex;
@@ -568,7 +580,6 @@ body {
   margin-right: 30px;
 }
 
-
 .third-section {
   margin-top: -94px;
 }
@@ -591,7 +602,6 @@ body {
 .team-img > li:not(:last-child) {
   margin-right: 30px;
 }
-
 
 .employees {
   background: var(--background-grey);
@@ -620,7 +630,6 @@ body {
   padding: 30px;
   padding-bottom: 16px;
 }
-
 
 .client-icons {
   justify-content: center;
@@ -659,7 +668,6 @@ body {
   gap: 30px;
 }
 
-
 /* BACKDROP & MODAL */
 
 .backdrop {
@@ -673,9 +681,6 @@ body {
   align-items: center;
   display: flex;
   opacity: 1;
-  transform: scale(1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -687,12 +692,17 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  transform: scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.is-hidden div {
   transform: scale(0);
 }
 
