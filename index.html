@@ -60,9 +60,7 @@
       <section class="main-section">
         <div class="container">
           <h1 id="agencja">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <button class="modal-btn" type="button" data-modal-open>
-            Zamów usługę
-          </button>
+          <button type="button" data-modal-open>Zamów usługę</button>
         </div>
       </section>
 
@@ -406,12 +404,56 @@
             </li>
           </ul>
         </div>
+
+        <div class="footer-for">
+          <form>
+            <label>
+              ZAPISZ SIĘ DO NEWSLETTERA
+              <input type="email" name="email" placeholder="E-mail" />
+            </label>
+            <button type="submit">Zapisz się</button>
+          </form>
+        </div>
       </section>
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="close-btn" data-modal-close>X</button>
+        <form>
+          <button type="button" class="close-btn" data-modal-close>X</button>
+
+          <p>Zostaw swoje dane w formularzu poniżej</p>
+          <label class="modal-data">
+            Imię
+            <input type="text" name="username" placeholder="imię" />
+          </label>
+
+          <label class="modal-data">
+            Telefon
+            <input type="tel" name="tel" placeholder="tel" />
+          </label>
+
+          <label class="modal-data">
+            Email
+            <input type="email" name="email" placeholder="email" />
+          </label>
+
+          <label class="modal-textarea">
+            Komentarz
+            <textarea name="Komentarz" rows="8" placeholder="Wprowadź tekst">
+            </textarea>
+          </label>
+
+          <div class="modal-checkbox">
+            <label>
+              <input type="checkbox" name="aggry" value="statute" />
+              Oświadczam iż akceptuję <span>Regulamin</span> i
+              <span>Politykę Prywatności</span>
+            </label>
+          </div>
+
+          <button class="modal-send-btn" type="submit">Wyślij</button>
+        </form>
       </div>
     </div>
 
