@@ -842,7 +842,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.modal-checkbox span {
+.modal-checkbox a {
   color: var(--active-color);
   text-decoration: underline;
 }
