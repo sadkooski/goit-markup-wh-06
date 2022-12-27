@@ -411,7 +411,11 @@
               ZAPISZ SIĘ DO NEWSLETTERA
               <input type="email" name="email" placeholder="E-mail" />
             </label>
-            <button type="submit">Zapisz się</button>
+            <button type="submit">
+              Zapisz się<svg width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </section>
@@ -423,20 +427,38 @@
           <button type="button" class="close-btn" data-modal-close>X</button>
 
           <p>Zostaw swoje dane w formularzu poniżej</p>
-          <label class="modal-data">
-            Imię
-            <input type="text" name="username" placeholder="imię" />
-          </label>
 
-          <label class="modal-data">
-            Telefon
-            <input type="tel" name="tel" placeholder="tel" />
-          </label>
+          <div class="modal-data">
+            <div>
+              <label>
+                Imię
+                <svg class="svg-mod" width="12" height="12">
+                  <use href="./images/icons.svg#person-mod"></use>
+                </svg>
+                <input type="text" name="name" />
+              </label>
+            </div>
 
-          <label class="modal-data">
-            Email
-            <input type="email" name="email" placeholder="email" />
-          </label>
+            <div>
+              <label>
+                Telefon
+                <svg class="svg-mod" width="14" height="14">
+                  <use href="./images/icons.svg#tel-mod"></use>
+                </svg>
+                <input type="tel" name="tel" />
+              </label>
+            </div>
+
+            <div>
+              <label>
+                Imię
+                <svg class="svg-mod" width="16" height="16">
+                  <use href="./images/icons.svg#mail-mod"></use>
+                </svg>
+                <input type="text" name="name" />
+              </label>
+            </div>
+          </div>
 
           <label class="modal-textarea">
             Komentarz
