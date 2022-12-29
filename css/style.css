@@ -631,6 +631,11 @@ body {
   padding-bottom: 16px;
 }
 
+.employees-text figcaption {
+  display: flex;
+  flex-direction: column;
+}
+
 .client-icons {
   justify-content: center;
   align-items: center;
