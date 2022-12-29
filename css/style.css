@@ -821,6 +821,7 @@ body {
   border-radius: 4px;
   margin-top: 4px;
   padding: 12px 16px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-textarea textarea:is(:hover, :focus) {
@@ -843,28 +844,34 @@ body {
 .modal-checkbox a {
   color: var(--active-color);
   text-decoration: underline;
+  margin-left: 4px;
+  margin-right: 4px;
 }
 
-.modal-checkbox div {
+.svg-checked {
   position: relative;
   border: 2px solid var(--title-color);
   width: 16px;
   height: 15px;
   border-radius: 3px;
   margin-right: 8px;
+  cursor: pointer;
 }
 
-.svg-checked {
+.svg-checked svg {
   opacity: 0;
   position: absolute;
-  top: -1px;
-  left: -1px;
+  top: -2px;
+  left: -2px;
 }
 
-.modal-checkbox input {
+.input-checked {
+  position: absolute;
+  left: 62px;
+  display: none;
 }
 
-.input-checked:checked + .svg-checked {
+.input-checked:checked + .svg-checked svg {
   opacity: 1;
 }
 
@@ -918,11 +925,13 @@ body {
   position: absolute;
   left: 15px;
   top: 34px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-data input {
   width: 448px;
   padding-left: 42px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-data > label > input:is(:hover, :focus) + svg {
