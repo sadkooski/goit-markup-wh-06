@@ -768,6 +768,11 @@ body {
   padding-left: 16px;
   padding-bottom: 15px;
   margin-top: 20px;
+  outline: 0;
+}
+
+.footer-for input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-for svg {
@@ -803,7 +808,6 @@ body {
 .modal-data {
   display: flex;
   margin-left: 40px;
-  margin-bottom: 10px;
 }
 .modal-data input {
   margin-right: 40px;
@@ -813,6 +817,7 @@ body {
   padding-left: 15px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline: 0;
 }
 
 .modal-textarea {
@@ -827,13 +832,14 @@ body {
   margin-top: 4px;
   padding: 12px 16px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: 0;
 }
 
 .modal-textarea textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-textarea textarea:is(:hover, :focus) {
+.modal-textarea textarea:focus {
   border-color: var(--active-color);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -878,6 +884,7 @@ body {
   position: absolute;
   left: 62px;
   display: none;
+  outline: 0;
 }
 
 .input-checked:checked + .svg-checked svg {
@@ -912,28 +919,10 @@ body {
 .modal-data {
   display: flex;
   flex-direction: column;
-}
-
-.modal-data div {
-  position: relative;
-  margin-top: 10px;
-}
-
-.modal-data label:last-child svg {
-  position: absolute;
-  top: 32px;
-}
-
-.modal-data label {
-  display: flex;
-  position: relative;
-  margin-top: 10px;
+  margin-right: 40px;
 }
 
 .modal-data svg {
-  position: absolute;
-  left: 15px;
-  top: 34px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -941,13 +930,30 @@ body {
   width: 448px;
   padding-left: 42px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: 0;
 }
 
-.modal-data > label > input:is(:hover, :focus) + svg {
+.svg-mod > input:focus + svg {
   fill: var(--active-color);
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-data > label > input:is(:hover, :focus) {
+.svg-mod > input:focus {
   border-color: var(--active-color);
+}
+
+.svg-mod {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.svg-mod svg {
+  position: absolute;
+  top: 20px;
+  left: 15px;
+}
+
+.label-mod {
+  display: flex;
+  height: 14px;
 }
